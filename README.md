@@ -9,3 +9,11 @@ Append it to the Root element.
 
 #Create "hello world from react" using CDN
 
+# try to create nested elements using react.createElement
+<div>
+    <div>
+        <h1>
+    </div>
+</div>
+
+
