@@ -3,6 +3,7 @@
   "description": "#Create a “hello world” using normal html tags.",
   "version": "1.0.0",
   "scripts": {
+    "start":"npx parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

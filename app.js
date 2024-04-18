@@ -1,16 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './src/components/Header';
+import Body from './src/components/Body';
+import Footer from './src/components/Footer';
 
-//jsx is converted into again react.createelement i.e is a JS object converted into html element on render
-const elem1 =<span>elem1</span>;
-const Comp1 = ()=> <h1> this is a comp1</h1>
-const Comp2 = ()=>{
-    return( <div>
-        <Comp1></Comp1>
-    <h1>this is from compoenent 2</h1>
-    </div>)
+
+
+const App = ()=>{
+
+    return (
+        <>
+        <Header/>
+        <Body/>
+        <Footer/>
+        </>
+        )
+
 }
-const elem2 =<h1>{elem1}elem2<Comp2/></h1>;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(Comp2());
+root.render(<App/>);
